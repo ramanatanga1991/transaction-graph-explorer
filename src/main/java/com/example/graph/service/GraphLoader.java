@@ -20,7 +20,7 @@ public class GraphLoader implements IGraphLoader {
 
     public GraphLoader(ObjectMapper objectMapper) throws IOException {
         GraphData graphData = objectMapper.readValue(
-                new ClassPathResource("transactions-graph-nodes.json").getInputStream(),
+                new ClassPathResource("transactions-graph.json").getInputStream(),
                 GraphData.class
         );
 
